@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: "Raleway", Arial, sans-serif;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar bg-light">
+    <div class="container-fluid d-flex flex-row-reverse">
+        <a class="navbar-brand" href="#">
+            <img src="https://thelmaproperties.co.za/wp-content/uploads/2021/04/logo-2.png" alt="Logo" width="500"
+                 height="220"
+                 class="d-inline-block align-text-top mr-5 img-fluid">
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="mt-4 mb-5 text-center text-danger
+            shadow p-3 mb-5 bg-body rounded">
+        Rental Application Form for Residential Property</h1>
+
+    <div class="mb-5">
+        <label>Application completion progress</label>
+        <div class="progress mt-3">
+            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0"
+                 aria-valuemax="100">0%
+            </div>
+        </div>
+        <label class="float-start mt-0">Start</label>
+        <label class="float-end mt-0">Finish</label>
+    </div>
+
+    <div class="mb-3 text-danger shadow-none p-3 bg-light rounded">
+        <h3 class="text-center">General Information</h3>
+    </div>
+
+    <form class="needs-validation" novalidate>
+        <div class="col-md-12 mb-3">
+            <label for="validationIorWe">I/ We</label>
+            <input type="text" class="form-control" id="validationIorWe" placeholder="Your names or business name"
+                   name="iOrWe"
+                   required>
+            <div class="">
+                <label>Apply to rent a property (“the premises”) from Landlord</label>
+            </div>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <label for="validationPropertyAddress">The address of the Premises is </label>
+            <input type="text" class="form-control" id="validationPropertyAddress" placeholder="Address"
+                   name="propertyAddress"
+                   required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-5 mb-3">
+            <label>Who will be residing at the premises for the whole period of the Lease?</label>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md-2 mb-3">
+                <label for="validationNoOfAdults">Number of adults</label>
+                <input type="number" class="form-control" id="validationNoOfAdults"
+                       name="noOfAdults"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationNoOfChildren">Number of children</label>
+                <input type="number" class="form-control" id="validationNoOfChildren"
+                       name="noOfChildren"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationChildOne">Child one age</label>
+                <input type="number" class="form-control" id="validationChildOne"
+                       name="childOne"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationChildTwo">Child two age</label>
+                <input type="number" class="form-control" id="validationChildTwo"
+                       name="childTwo"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationChildThree">Child three age</label>
+                <input type="number" class="form-control" id="validationChildThree"
+                       name="childThree"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationChildFour">Child four age</label>
+                <input type="number" class="form-control" id="validationChildFour"
+                       name="childFour"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <label for="validationSchools">Names of schools attends by children </label>
+            <input type="text" class="form-control" id="validationSchools" placeholder="School name"
+                   name="schoolName"
+                   required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-4 mb-3">
+                <label for="validationNoOfPets">Number of the pets owned</label>
+                <input type="number" class="form-control" id="validationNoOfPets" placeholder="0"
+                       name="schools"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-8 mb-3">
+                <label for="validationPetsType">Type of pets</label>
+                <input type="text" class="form-control" id="validationPetsType" placeholder="Type of pets"
+                       name="typeOfPets"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 mb-3">
+            <label>Number of vehicles at premises</label>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md-2 mb-3">
+                <label for="validationTypeOfVehicle1">Type of vehicle one</label>
+                <input type="text" class="form-control" id="validationTypeOfVehicle1"
+                       placeholder="Type of vehicle"
+                       name="typeOfVehicle1"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationRegNo1">Registration</label>
+                <input type="text" class="form-control" id="validationRegNo1"
+                       placeholder="__ __ __ __" name="regNo1"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationTypeOfVehicle2">Type of vehicle two</label>
+                <input type="text" class="form-control" id="validationTypeOfVehicle2"
+                       placeholder="Type of vehicle"
+                       name="typeOfVehicle2"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationRegNo2">Registration</label>
+                <input type="text" class="form-control" id="validationRegNo2"
+                       placeholder="__ __ __ __" name="regNo2"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationTypeOfVehicle3">Type of vehicle three</label>
+                <input type="text" class="form-control" id="validationTypeOfVehicle3"
+                       placeholder="Type of vehicle"
+                       name="typeOfVehicle3"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationRegNo3">Registration</label>
+                <input type="number" class="form-control" id="validationRegNo3"
+                       placeholder="__ __ __ __" name="regNo3"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 mt-5 text-danger shadow-none p-3 bg-light rounded">
+            <h3 class="text-center">Details of the first person applying to rent the Premises</h3>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">First names</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="First names"
+                       name="firstNames"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" name="lastName"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-6 mb-3">
+                <label for="validationNationality">Nationality</label>
+                <input type="text" class="form-control" id="validationNationality" placeholder="Nationality"
+                       name="nationality"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationIdNumber">Id number</label>
+                <input type="text" class="form-control" id="validationIdNumber" placeholder="Identity no."
+                       name="idNumber"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 input-group mb-3 ">
+                <label class="input-group-text" for="inputGroupSelect01">Marital Status</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Single</option>
+                    <option value="2">Married in Community of Property</option>
+                    <option value="3">Married ANC</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md-4 mb-3">
+                <label for="validationHomeContact">Home contact no.</label>
+                <input type="text" class="form-control" id="validationHomeContact" placeholder="Home contact no."
+                       name="homeContactNo"/>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationWorkContact">Work contact no.</label>
+                <input type="text" class="form-control" id="validationWorkContact" placeholder="Work contact no."
+                       name="WorkContactNo"/>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="validationFax">Fax no.</label>
+                <input type="text" class="form-control" id="validationFax" placeholder="Fax no." name="faxNo"/>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-6 mb-3">
+                <label for="validationCellphoneContact">Cellphone contact no.</label>
+                <input type="text" class="form-control" id="validationCellphoneContact"
+                       placeholder="Cellphone contact no." name="cellphoneContactNo"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationEmail">Email address</label>
+                <input type="email" class="form-control" id="validationEmail" placeholder="Email address"
+                       name="email"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="validationAddress">Address</label>
+                <input type="text" class="form-control" id="validationAddress" placeholder="Address" name="address"/>
+            </div>
+        </div>
+        <div class="form-row row g-2">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom04">Province</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="Province" required>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="validationCustom05">Postal code</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="Postal code" required>
+                <div class="invalid-feedback">
+                    Please provide a valid postal code.
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-5 mb-3">
+                <label>Are you the owner of the property where you currently reside?</label>
+            </div>
+            <div class="col-md-2 mb-3">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                       value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+            </div>
+            <div class="col-md-4 mb-3">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                       value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-6 mb-3">
+                <label for="validationRentYear">How long have you rented the property in years?</label>
+                <input type="number" class="form-control" id="validationRentYear" placeholder="0"
+                       name="rentYears"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationAgent">Name of Rental Agent / landlord</label>
+                <input type="text" class="form-control" id="validationAgent"
+                       placeholder="Name of Rental Agent / landlord" name="agentName"
+                       required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="row g-2">
+            <div class="col-md-4 mb-3">
+                <label for="validationAgentNo">Contact no.</label>
+                <input type="text" class="form-control" id="validationAgentNo" placeholder="Contact no" required>
+                <div class="invalid-feedback">
+                    Please provide a contact no.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationAgentCellphone">Cellphone no.</label>
+                <input type="text" class="form-control" id="validationAgentCellphone" placeholder="Cellphone no."
+                       required>
+                <div class="invalid-feedback">
+                    Please provide a cellphone no.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationAgentEmail">Email address</label>
+                <input type="email" class="form-control" id="validationAgentEmail" placeholder="Email address" required>
+                <div class="invalid-feedback">
+                    Please provide a valid email address.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+
+
+
+    </script>
+
+    <!--    <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>-->
+</div>
+
+</body>
+</html>
