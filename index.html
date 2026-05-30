@@ -1,181 +1,381 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Xola Mkhatshwa</title>
-    <link rel="icon" href="myicon.ico" />
-    <link rel="stylesheet" href="css/master.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/2fc040a994.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="top-container">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-img" />
-      <h1>I'm Xola</h1>
-      <h2>a <u>pro</u>grammer.</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
-      <img src="images/mountain.png" alt="mountain-img" />
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="images/profile4.png" alt="Xola-image" />
-        <h2>Hello.</h2>
-        <p class="intro">
-          I am Full Stack Software Engineer. I'm the founder and CIO of Bukhanda
-          Investments. I ❤️ coffee.
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Xola Mkhatshwa is a South African software engineer building practical web applications, backend APIs, dashboards, and business websites." />
+  <meta property="og:title" content="Xola Mkhatshwa | Software Engineer" />
+  <meta property="og:description"
+    content="Practical digital systems for businesses: web apps, APIs, dashboards, and workflow tools." />
+  <meta property="og:type" content="website" />
+  <title>Xola Mkhatshwa | Software Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="myicon.ico" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Xola Mkhatshwa home">
+      <span class="brand-mark">XM</span>
+      <span>Xola Mkhatshwa</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Software engineer based in South Africa</p>
+        <p class="hero-kicker">Hi, I'm Xola Mkhatshwa.</p>
+        <h1>I build practical digital systems for businesses.</h1>
+        <p class="hero-copy">
+          I build web applications, backend APIs, dashboards, and business tools that
+          improve visibility, reduce manual work, and help teams operate more efficiently.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-secondary" href="#services">Work With Me</a>
+          <a class="btn btn-ghost" href="mailto:mkhatshwa.xola@gmail.com?subject=CV Request - Xola Mkhatshwa">Request My
+            CV</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Professional summary">
+        <img src="images/profile-new.png" alt="Portrait of Xola Mkhatshwa" />
+        <div>
+          <p class="hero-card-title">Full-Stack Software Engineer</p>
+          <p>
+            Java, Spring Boot, React, TypeScript, SQL, REST APIs, dashboards,
+            authentication, and business process digitisation.
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section section-light">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Software engineering with business understanding.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am a South African software engineer with experience building enterprise
+          backend systems, APIs, frontend applications, dashboards, and business-focused
+          digital tools.
+        </p>
+        <p>
+          My work sits at the intersection of software engineering and business
+          problem-solving. I enjoy taking unclear, manual, or inefficient processes and
+          turning them into structured digital solutions that are easier to manage,
+          track, and improve.
+        </p>
+        <p>
+          Outside of professional engineering work, I am also involved in business and
+          entrepreneurship. That gives me a practical view of where businesses struggle
+          and how technology can improve visibility, accountability, and growth.
         </p>
       </div>
-      <hr />
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="code-img" src="images/giphy.gif" alt="code-img" />
-          <h3>Design & Development</h3>
-          <p class="code-img-description">
-            I started learning to code because I wanted to make my own video
-            games. Over time, I have gained wealth of experience designing and
-            developing mobile and web applications.
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">What I Do</p>
+        <h2>Useful, reliable systems that solve real operational problems.</h2>
+      </div>
+      <div class="card-grid service-grid">
+        <article class="card">
+          <span class="card-icon">FS</span>
+          <h3>Full-Stack Web Development</h3>
+          <p>
+            Modern web applications using React, TypeScript, Java, Spring Boot,
+            REST APIs, and SQL databases.
           </p>
+        </article>
+        <article class="card">
+          <span class="card-icon">API</span>
+          <h3>Backend & API Development</h3>
+          <p>
+            Reliable backend services, data models, validations, integrations, and
+            production-ready API improvements.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-icon">BP</span>
+          <h3>Business Process Digitisation</h3>
+          <p>
+            Structured systems that replace scattered WhatsApp follow-ups,
+            spreadsheets, and manual tracking.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-icon">DR</span>
+          <h3>Dashboards & Reporting</h3>
+          <p>
+            Reporting views that help users track activity, monitor progress, and
+            make clearer decisions.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-icon">WEB</span>
+          <h3>Business Websites</h3>
+          <p>
+            Professional websites for individuals and businesses that need to present
+            their value clearly and generate enquiries.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical tools and professional strengths.</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <h3>Technical Skills</h3>
+          <div class="tag-list" aria-label="Technical skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>REST APIs</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>Git</span>
+            <span>Maven</span>
+            <span>Flyway</span>
+            <span>Authentication</span>
+            <span>Database Design</span>
+          </div>
         </div>
-        <br />
-        <div class="skill-row">
-          <img class="chilli-img" src="images/chillies.png" alt="chilli-img" />
-          <h3>Hot Wings Challenge</h3>
-          <p class="chilli-img-description">
-            But my best skill is actually in eating hot wings. I am the
-            undisputed king of hot wing challenges. Ghost Peppers and Carolina
-            Reapers are my favourite snacks.
-          </p>
+        <div>
+          <h3>Professional Strengths</h3>
+          <div class="tag-list" aria-label="Professional strengths">
+            <span>Backend Development</span>
+            <span>Frontend Development</span>
+            <span>API Design</span>
+            <span>Problem Solving</span>
+            <span>Business Analysis</span>
+            <span>Process Improvement</span>
+            <span>Performance Optimisation</span>
+            <span>Communication</span>
+            <span>Ownership</span>
+            <span>Practical Solution Design</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <hr style="margin-top: 10%" />
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <ul class="socials">
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work across workflow, recruitment, backend, and business websites.</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card featured-project">
+          <figure class="project-media" data-state="missing" data-label="SiteFlow dashboard screenshot">
+            <img src="images/siteflow-dashboard.png" alt="SiteFlow dashboard showing task tracking and recent tasks"
+              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
+              onerror="this.closest('.project-media').dataset.state='missing'" />
+          </figure>
+          <div>
+            <span class="project-badge public-badge">Public showcase</span>
+            <p class="project-type">Business Workflow & Follow-up Management System</p>
+            <h3>SiteFlow</h3>
+            <p>
+              A workflow management system that helps small businesses track tasks,
+              customer follow-ups, responsibilities, and progress in one place.
+            </p>
+          </div>
+          <ul>
+            <li>Task and case tracking</li>
+            <li>Dashboard overview and reports screen</li>
+            <li>Frontend MVP built with React, TypeScript, and Bootstrap</li>
+            <li>Spring Boot backend planned</li>
+          </ul>
+          <p class="project-value">
+            Helps businesses reduce forgotten follow-ups and improve accountability.
+          </p>
+          <div class="project-actions">
+            <a href="images/siteflow-dashboard.png">View Preview</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <figure class="project-media" data-state="missing" data-label="RecruitIQ landing page screenshot">
+            <img src="images/recruitiq-home.png" alt="RecruitIQ landing page hero for an HR and recruitment platform"
+              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
+              onerror="this.closest('.project-media').dataset.state='missing'" />
+          </figure>
+          <span class="project-badge planned-badge">Preview ready</span>
+          <p class="project-type">Recruitment & Applicant Tracking Platform</p>
+          <h3>RecruitIQ / JobConnect</h3>
+          <p>
+            A recruitment platform for receiving, managing, and tracking job
+            applications in a structured way.
+          </p>
+          <ul>
+            <li>Public application flow</li>
+            <li>Recruiter login and JWT authentication</li>
+            <li>Resume upload and download</li>
+            <li>Admin analytics dashboard</li>
+          </ul>
+          <div class="project-actions">
+            <a href="images/recruitiq-home.png">View Preview</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge confidential-badge">Confidential enterprise work</span>
+          <p class="project-type">Backend API & Performance Optimisation</p>
+          <h3>Enterprise Case Management API Work</h3>
+          <p>
+            Backend improvements for an enterprise case management system, including
+            API development, schema changes, validation, and production-readiness.
+          </p>
+          <ul>
+            <li>Java and Spring Boot API enhancements</li>
+            <li>Flyway migration scripts</li>
+            <li>DTO validation and unit testing</li>
+            <li>Query-level locking analysis</li>
+          </ul>
+          <p class="confidential-note">
+            Screenshots and implementation details withheld due to confidentiality.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge confidential-badge">Confidential enterprise work</span>
+          <p class="project-type">Auditability & Search Improvement</p>
+          <h3>Case Audit & Searchable Variables Enhancement</h3>
+          <p>
+            An enhancement for tracking, auditing, and searching case information
+            with stronger traceability and reporting support.
+          </p>
+          <ul>
+            <li>Case audit data model</li>
+            <li>Party and identifier audit tracking</li>
+            <li>Searchable variable support</li>
+            <li>Database relationships and indexing</li>
+          </ul>
+          <p class="confidential-note">
+            Screenshots and implementation details withheld due to confidentiality.
+          </p>
+        </article>
+
+        <article class="project-card wide-project">
+          <figure class="project-media" data-state="missing" data-label="Bukhanda Logistics homepage screenshot">
+            <img src="images/bukhanda-logistics-home.png" alt="Bukhanda Logistics website homepage hero section"
+              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
+              onerror="this.closest('.project-media').dataset.state='missing'" />
+          </figure>
+          <span class="project-badge public-badge">Public showcase</span>
+          <p class="project-type">One-Page Business Website</p>
+          <h3>Bukhanda Logistics Website</h3>
+          <p>
+            A responsive one-page website for a logistics business, designed to
+            present services clearly and receive customer enquiries.
+          </p>
+          <ul>
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Mobile hamburger navigation</li>
+            <li>Services, about, process, and contact sections</li>
+            <li>WhatsApp enquiry flow</li>
+          </ul>
+          <div class="project-actions">
+            <a href="images/bukhanda-logistics-home.png">View Preview</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section work-section">
+      <div class="section-heading">
+        <p class="eyebrow">Work With Me</p>
+        <h2>From simple websites to internal business tools.</h2>
+      </div>
+      <div class="work-grid">
+        <p>
+          I can help individuals, startups, and small businesses with websites,
+          landing pages, web applications, admin dashboards, workflow systems,
+          backend APIs, business process digitisation, and system improvements.
+        </p>
+        <p>
+          Whether you need a simple website, an internal business tool, or a custom
+          application, I focus on building solutions that are practical, clear, and
+          aligned with real business needs.
+        </p>
+      </div>
+    </section>
+
+    <section class="section booking-section" aria-labelledby="booking-title">
+      <div class="section-heading">
+        <p class="eyebrow">Book A Consultation</p>
+        <h2 id="booking-title">Choose a time to discuss your project.</h2>
+        <p>
+          Prefer a quick call? Book a consultation and share what you want to build,
+          improve, or digitise.
+        </p>
+      </div>
+      <a class="btn btn-primary booking-button" href="https://calendly.com/mkhatshwa-xola" target="_blank"
+        rel="noopener noreferrer">Book a Consultation</a>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together.</h2>
+        <p>
+          Have an idea, business problem, or digital project you want to build?
+          I'm open to websites, business systems, dashboards, backend APIs, and
+          custom web applications.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mkhatshwa.xola@gmail.com">Email Me</a>
+          <a class="btn btn-secondary" href="https://wa.me/27678490444" target="_blank"
+            rel="noopener noreferrer">WhatsApp</a>
+        </div>
+        <ul class="contact-links" aria-label="Social and professional links">
           <li>
-            <a
-              href="https://www.linkedin.com/in/xola-mkhatshwa-966482a0/"
-              target="_blank"
-              ><img
-                id="linkedin-img"
-                src="images/linkedin-logo-png-1840.png"
-                alt="cloud-img"
-            /></a>
+            <a href="https://www.linkedin.com/in/xola-mkhatshwa-966482a0" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
           </li>
           <li>
-            <a href="https://github.com/xmkhatshwa" target="_blank"
-              ><img id="github-img" src="images/github.png" alt="cloud-img"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.reddit.com/user/xolamkhatshwa" target="_blank"
-              ><img id="reddit-img" src="images/reddit.png" alt="reddit-img"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/XolaMkhatshwa" target="_blank"
-              ><img
-                id="twitter-img"
-                src="images/twitter-x-logo-42561.png"
-                alt="cloud-img"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/xolamkhatshwa_" target="_blank"
-              ><img
-                id="instagram-img"
-                src="images/instagram.svg"
-                alt="instagram-img"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/xola.mkhatshwa.5" target="_blank"
-              ><img id="facebook-img" src="images/facebook.png" alt="cloud-img"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@xolamkhatshwa" target="_blank"
-              ><img
-                id="tiktok-img"
-                src="images/tik-tok-logo-33084.png"
-                alt="cloud-img"
-            /></a>
+            <a href="https://github.com/xmkhatshwa" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
         </ul>
-        <p class="intro" style="margin-bottom: 2%">
-          Love hot wings as much as I do? Let's talk about how awesome they are!
-          We can code while eating hot wings!
-        </p>
-        <a class="btn" href="mailto:xolam@bukhanda.co.za">CONTACT ME</a>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <iframe
-      width="100%"
-      height="750px"
-      src="https://xolam-bukhanda.zohobookings.com/portal-embed#/customer/4314856000000031034"
-      frameborder="0"
-      allowfullscreen=""
-    >
-    </iframe>
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Xola Mkhatshwa. Software Engineer based in South Africa.</p>
+    <nav class="footer-links" aria-label="Footer links">
+      <a href="https://www.linkedin.com/in/xola-mkhatshwa-966482a0" target="_blank"
+        rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/xmkhatshwa" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:mkhatshwa.xola@gmail.com">Email</a>
+    </nav>
+  </footer>
 
-    <div class="bottom-container">
-      <a
-        class="footer-link"
-        href="https://www.linkedin.com/in/xola-mkhatshwa-966482a0/"
-        target="_blank"
-        >LinkedIn</a
-      >
-      <a
-        class="footer-link"
-        href="https://github.com/xmkhatshwa"
-        target="_blank"
-        >Github</a
-      >
-      <a
-        class="footer-link"
-        href="https://www.reddit.com/user/xolamkhatshwa"
-        target="_blank"
-        >Reddit</a
-      >
-      <a
-        class="footer-link"
-        href="https://twitter.com/XolaMkhatshwa"
-        target="_blank"
-        >Twitter</a
-      >
-      <a
-        class="footer-link"
-        href="https://www.instagram.com/xola_mkhatshwa"
-        target="_blank"
-        >Instagram</a
-      >
-      <a
-        class="footer-link"
-        href="https://www.facebook.com/xola.mkhatshwa.5/"
-        target="_blank"
-        >Facebook</a
-      >
-      <a
-        class="footer-link"
-        href="https://www.tiktok.com/@xolamkhatshwa"
-        target="_blank"
-        >Tiktok</a
-      >
-      <p class="copyright">© <span id="year">2023</span> @Xola Mkhatshwa</p>
-    </div>
-  </body>
   <script>
-    var currentYear = new Date().getFullYear();
-
-    var year = document.getElementById("year");
-    year.innerHTML = currentYear;
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+</body>
+
 </html>
