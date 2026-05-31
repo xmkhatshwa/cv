@@ -455,7 +455,7 @@ h3 {
 
 .project-media {
   align-items: center;
-  background: var(--accent-soft);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
   display: flex;
@@ -481,13 +481,12 @@ h3 {
 }
 
 .project-media img {
-  aspect-ratio: 16 / 9;
   display: block;
-  height: auto;
+  height: 100%;
   inset: 0;
   opacity: 0;
-  object-fit: cover;
-  object-position: top left;
+  object-fit: contain;
+  object-position: center;
   position: absolute;
   transition: opacity 220ms ease;
   width: 100%;
@@ -498,6 +497,7 @@ h3 {
 }
 
 .project-media[data-state="loaded"] img {
+  height: auto;
   opacity: 1;
   position: static;
 }
@@ -522,6 +522,11 @@ h3 {
   margin-top: auto;
 }
 
+.project-actions-separated {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
 .project-actions a {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -540,10 +545,12 @@ h3 {
 .project-badge {
   align-self: flex-start;
   border-radius: 999px;
+  display: inline-flex;
   font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   line-height: 1;
+  margin-bottom: 10px;
   padding: 8px 10px;
   text-transform: uppercase;
 }
@@ -587,6 +594,10 @@ h3 {
   color: var(--accent-strong);
 }
 
+.featured-project .project-actions-separated {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+
 .featured-project .project-actions a:hover {
   background: var(--accent-soft);
   border-color: var(--accent-soft);
@@ -608,7 +619,7 @@ h3 {
 }
 
 .project-badge + .project-type {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .featured-project .project-type {
@@ -616,10 +627,7 @@ h3 {
 }
 
 .project-value {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
   font-weight: 700;
-  margin-top: auto;
-  padding-top: 18px;
 }
 
 .booking-button {
