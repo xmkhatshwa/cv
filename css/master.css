@@ -493,11 +493,6 @@ h3 {
   color: var(--accent-strong);
 }
 
-.planned-badge {
-  background: #f8ecd4;
-  color: #7a4d0f;
-}
-
 .confidential-badge {
   background: #edf0ef;
   color: #46534f;
@@ -611,7 +606,8 @@ h3 {
 }
 
 .site-footer {
-  color: var(--muted);
+  background: var(--dark);
+  color: #d9e8e3;
   padding: 28px 24px;
   text-align: center;
 }
@@ -629,13 +625,13 @@ h3 {
 }
 
 .footer-links a {
-  color: var(--accent-strong);
+  color: #ffffff;
   font-weight: 800;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: var(--ink);
+  color: #9adbd2;
 }
 
 @media (max-width: 1020px) {
