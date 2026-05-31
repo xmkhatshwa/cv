@@ -308,14 +308,42 @@ h3 {
   padding: 28px;
 }
 
-.hero-card img {
+.profile-photo {
   aspect-ratio: 4 / 5;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.18), rgba(18, 32, 29, 0.08)),
+    var(--accent-soft);
   border: 8px solid var(--accent-soft);
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.profile-photo span {
+  color: var(--accent-strong);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.profile-photo img {
+  height: 100%;
+  inset: 0;
+  opacity: 0;
   object-fit: cover;
   object-position: center top;
+  position: absolute;
+  transition: opacity 220ms ease;
   width: 100%;
+}
+
+.profile-photo[data-state="loaded"] img {
+  opacity: 1;
 }
 
 .hero-card-title {
@@ -426,24 +454,56 @@ h3 {
 }
 
 .project-media {
+  align-items: center;
   background: var(--accent-soft);
   border: 1px solid var(--line);
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   margin: 0;
+  min-height: 180px;
   overflow: hidden;
+  position: relative;
 }
 
 .project-media[data-state="missing"] {
   display: none;
 }
 
+.project-media span {
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .project-media img {
   aspect-ratio: 16 / 9;
   display: block;
   height: auto;
+  inset: 0;
+  opacity: 0;
   object-fit: cover;
   object-position: top left;
+  position: absolute;
+  transition: opacity 220ms ease;
   width: 100%;
+}
+
+.project-media[data-state="loaded"] {
+  min-height: 0;
+}
+
+.project-media[data-state="loaded"] img {
+  opacity: 1;
+  position: static;
+}
+
+.project-media[data-state="loaded"] span {
+  display: none;
 }
 
 .project-card ul {

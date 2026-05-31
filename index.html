@@ -52,7 +52,13 @@
         </div>
       </div>
       <aside class="hero-card" aria-label="Professional summary">
-        <img src="images/profile-new.png" alt="Portrait of Xola Mkhatshwa" />
+        <div class="profile-photo" data-state="loading">
+          <span aria-hidden="true">XM</span>
+          <img
+            src="images/profile-new.png"
+            alt="Portrait of Xola Mkhatshwa"
+          />
+        </div>
         <div>
           <p class="hero-card-title">Full-Stack Software Engineer</p>
           <p>
@@ -188,10 +194,10 @@
       </div>
       <div class="projects-grid">
         <article class="project-card featured-project">
-          <figure class="project-media" data-state="missing" data-label="SiteFlow dashboard screenshot">
+          <figure class="project-media" data-state="loading" data-label="SiteFlow dashboard screenshot">
+            <span aria-hidden="true">SiteFlow Preview</span>
             <img src="images/siteflow-dashboard.png" alt="SiteFlow dashboard showing task tracking and recent tasks"
-              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
-              onerror="this.closest('.project-media').dataset.state='missing'" />
+              loading="lazy" />
           </figure>
           <div>
             <span class="project-badge public-badge">Public showcase</span>
@@ -217,10 +223,10 @@
         </article>
 
         <article class="project-card">
-          <figure class="project-media" data-state="missing" data-label="RecruitIQ landing page screenshot">
+          <figure class="project-media" data-state="loading" data-label="RecruitIQ landing page screenshot">
+            <span aria-hidden="true">RecruitIQ Preview</span>
             <img src="images/recruitiq-home.png" alt="RecruitIQ landing page hero for an HR and recruitment platform"
-              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
-              onerror="this.closest('.project-media').dataset.state='missing'" />
+              loading="lazy" />
           </figure>
           <span class="project-badge public-badge">Public showcase</span>
           <p class="project-type">Recruitment & Applicant Tracking Platform</p>
@@ -279,10 +285,10 @@
         </article>
 
         <article class="project-card wide-project">
-          <figure class="project-media" data-state="missing" data-label="Bukhanda Logistics homepage screenshot">
+          <figure class="project-media" data-state="loading" data-label="Bukhanda Logistics homepage screenshot">
+            <span aria-hidden="true">Bukhanda Logistics Preview</span>
             <img src="images/bukhanda-logistics-home.png" alt="Bukhanda Logistics website homepage hero section"
-              loading="lazy" onload="this.closest('.project-media').dataset.state='loaded'"
-              onerror="this.closest('.project-media').dataset.state='missing'" />
+              loading="lazy" />
           </figure>
           <span class="project-badge public-badge">Public showcase</span>
           <p class="project-type">One-Page Business Website</p>
@@ -375,6 +381,36 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll(".profile-photo, .project-media").forEach(function (container) {
+      var image = container.querySelector("img");
+      var missingState = container.classList.contains("project-media") ? "missing" : "error";
+
+      if (!image) {
+        container.dataset.state = missingState;
+        return;
+      }
+
+      function markLoaded() {
+        container.dataset.state = "loaded";
+      }
+
+      function markMissing() {
+        container.dataset.state = missingState;
+      }
+
+      if (image.complete) {
+        if (image.naturalWidth > 0) {
+          markLoaded();
+        } else {
+          markMissing();
+        }
+      } else {
+        container.dataset.state = "loading";
+        image.addEventListener("load", markLoaded, { once: true });
+        image.addEventListener("error", markMissing, { once: true });
+      }
+    });
   </script>
 </body>
 
